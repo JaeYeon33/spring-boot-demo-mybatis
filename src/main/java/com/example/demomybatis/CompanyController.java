@@ -12,9 +12,13 @@ public class CompanyController {
     @Autowired
     private CompanyMapper companyMapper;
 
+    @Autowired
+    private CompanyService companyService;
+
     @PostMapping("")
     public Company post(@RequestBody Company company) {
-        companyMapper.insert(company);
+        // companyMapper.insert(company);
+        companyService.add(company);
         return company;
     }
 
