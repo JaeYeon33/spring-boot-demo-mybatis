@@ -49,3 +49,35 @@ CREATE TABLE employee (
 ```
 
 
+### Directory
+```text
+src
+  |
+  --- main
+  |      |
+  |      --- java
+  |            |
+  |            --- com.example.demomybatis
+  |            |             |
+  |            |             --- Company.java
+  |            |             --- CompanyController.java
+  |            |             --- CompanyMapper.java
+  |            |             --- CompanyService.java
+  |            |             --- DemoMybatisApplication.java
+  |            |             --- Employee.java
+  |            |             --- EmployeeController.java
+  |            |             --- EmployeeMapper.java
+  |            --- resources
+  |                    |
+  |                    --- static
+  |                    --- templates
+  |                    --- application.properties
+  --- test
+        |
+        --- java
+              |
+              --- com.example.demomybatis
+                            |
+                            --- DemoMybatisApplicationTest.java
+```			    
+
