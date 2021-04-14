@@ -1,6 +1,7 @@
 # spring-boot-demo-mybatis
 
 ### Table
+- company table 생성
 ```sql
 create table company (
 		id INTEGER AUTO_INCREMENT PRIMARY KEY,
@@ -9,7 +10,7 @@ create table company (
 		INDEX (company_name)
 )
 ```
-- company table 생성
+
 
 ```sql
 +-----------------+--------------+------+-----+---------+----------------+
@@ -22,7 +23,7 @@ create table company (
 3 rows in set (0.08 sec)
 ```
 
-
+- employee table 생성
 
 ```sql
 CREATE TABLE employee (
@@ -34,8 +35,6 @@ CREATE TABLE employee (
 		FOREIGN KEY (company_id) REFERENCES company(id)
 )
 ```
-- employee table 생성
-
 ```sql
 +------------------+--------------+------+-----+---------+----------------+
 | Field            | Type         | Null | Key | Default | Extra          |
